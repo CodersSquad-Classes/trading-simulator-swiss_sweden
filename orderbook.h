@@ -52,6 +52,14 @@ public:
     std::vector<LevelAgg> top_sells(size_t n);
     std::vector<Trade> recent_trades(size_t n);
 
-
+private:
+    std::multiset<Order, BuyCmp> buys;
+    std::multiset<Order, SellCmp> sells;
+    std::vector<Trade> trades;
+    std::mutex m;
+    uint64_t next_id;
+    uint64_t next_ts;
+    void record_trade(double price, uint64_t qty, Side aggressor, uint64_t ts);
+};
 
 #endif

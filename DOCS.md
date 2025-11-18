@@ -210,3 +210,7 @@ The dashboard updates live until the program is stopped (Ctrl + C).
 **Joël**
 
 I learned how real-world exchanges implement price-time priority and how surprisingly complex matching engines are behind the scenes. Implementing the CLOB from scratch deepened my understanding of data structures, especially how multiset ordering can model real exchange mechanics. I also learned how to create a real-time terminal UI without flickering, which makes the system feel much more like a real trading dashboard.
+
+**Kasper**
+
+I learned that the matching logic itself is the hardest part for me. It's not just matching one order to one order. Handling partial fills, where a big order might wipe out several smaller ones, was surprisingly complex. It really made me appreciate how data structures like multiset are used in the real world. Getting the terminal to update in-place without flickering was also really cool and made it feel like a professional tool.

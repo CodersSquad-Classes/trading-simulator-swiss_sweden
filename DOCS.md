@@ -213,4 +213,4 @@ I learned how real-world exchanges implement price-time priority and how surpris
 
 **Kasper**
 
-I learned that the matching logic itself is the hardest part for me. It's not just matching one order to one order. Handling partial fills, where a big order might wipe out several smaller ones, was surprisingly complex. It really made me appreciate how data structures like multiset are used in the real world. Getting the terminal to update in-place without flickering was also really cool and made it feel like a professional tool.
+My biggest takeaway was dealing with the two threads. Making one thread create orders while the main thread showed the UI was tough. I had to learn how to use locks so they didn't crash the program or mess up the order book. It showed me how complex real exchanges must be. The live dashboard was also fun to build and watch run.
